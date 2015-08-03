@@ -122,7 +122,7 @@ tt <- rowttests(all_sh, all_sh$mol.biol)
 # adjust p-values for multiple testing 
 # using "Benjamini-Hochberg" method
 tt$p.adj <- p.adjust(tt$p.value, method = "BH")
-all_sig <- all_sh[tt$p.adj < 0.05, ]
+all_sig <- all_sh[tt$p.adj <= 0.05, ]
 # how many genes are we left with
 dim(all_sig)
 
