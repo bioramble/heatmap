@@ -1,3 +1,10 @@
+############################################################################
+# Bioramble
+# Heatmap: Part 2 - How to create a simple heatmap with R
+# by Jesse Lipp
+# Jul 31, 2015
+############################################################################
+
 # ----------------------------------------------------------
 # set up system
 # ----------------------------------------------------------
@@ -8,7 +15,6 @@ rm(list = ls())
 # load packages (install if necessary)
 if (!require("RColorBrewer")) {
   install.packages("RColorBrewer")
-  library(RColorBrewer)
 }
 
 # ----------------------------------------------------------
